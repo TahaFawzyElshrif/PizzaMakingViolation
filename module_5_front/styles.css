@@ -1,0 +1,126 @@
+.cameras{
+    width: 360px;
+    height: 360px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#cameras_part{
+    display: flex;
+    justify-content:space-around; /* توزيع أفقي */
+    align-items: center;       
+    padding-top: 80px;    
+    border-radius: 10px;
+    overflow: hidden; 
+
+}
+
+body{
+    background-image: url("images/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+    padding-left: 150px;
+    color: blueviolet;
+}
+.img-description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+
+    color: white;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    color: #ffcc00;
+}
+
+#list_section{
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-item{
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #584eb8;
+}
+
+.item-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.item-elements{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #584eb8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.element-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.element img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
